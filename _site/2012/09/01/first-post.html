@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="../../../js/jquery-1.8.1.min.js"></script>
+<style>
+ html, body {
+            height: 100%;
+        }
+        footer {
+            color: #666;
+            background: #222;
+            padding: 17px 0 18px 0;
+            border-top: 1px solid #000;    
+        }
+        footer a {
+            color: #999;
+        }
+        footer a:hover {
+            color: #efefef;
+        }
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -63px;
+        }
+        .push {
+            height: 63px;
+        }
+        /* not required for sticky footer; just pushes hero down a bit */
+        .wrapper > .container {
+            padding-top: 60px;
+        }
+
+        /* responsive footer fix by Aalaap Ghag */
+        @media (max-width: 767px) {
+            body {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+    
+            footer, .wrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .container {
+            max-width: 940px;
+        }
+        /* end responsive footer fix */
+        </style>
+</head>
+
+<body>
+<script src="../../../js/bootstrap.min.js"></script>
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="../../../index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="aLabel">
+                  <li class="nav-header">Header</li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Menu1</a></li>
+                  <li><a tabindex="-1" href="#">Menu2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      <script type="text/javascript">
+    jQuery(function($) {
+        
+        $('.dropdown-toggle').dropdown();
+        
+    });
+</script>
+    </div>
+
+<div class="wrapper">
+	<div class="container">
+	<div class="hero-unit">
+      <a class="btn btn-primary btn-large">
+        Learn more
+      </a>
+    </div>
+	<h1>포스팅의 제목은 이곳에 쓰여집니다.</h1>
+	<div>
+		<p>이 곳에 포스팅의 내용이 들어갑니다.</p>
+	</div>
+</div>
+	<div class="footer-push"></div>
+</div>
+
+<footer>
+  <div class="container">
+    Copyright(c) 2012 Androidhuman
+  </div>
+</footer>
+</body>
+
+</html>
