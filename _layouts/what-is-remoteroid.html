@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../../css/bootstrap-responsive.min.css" rel="stylesheet">
-  <script src="../../../js/jquery-1.8.1.min.js"></script>
-  <title>포스팅의 제목은 이곳에 쓰여집니다. :: Remoteroid Blog</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="js/jquery-1.8.1.min.js"></script>
+  <title>What is Remoteroid? :: Remoteroid</title>
 <style>
         html, body {
             height: 100%;
@@ -58,7 +58,7 @@
 </head>
 
 <body>
-<script src="../../../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
       <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -67,25 +67,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="../../../index.html">Remoteroid</a>
+          <a class="brand" href="index.html">Remoteroid</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="../../../what-is-remoteroid.html">What is Remoteroid?</a></li>
+              <li class="active"><a href="what-is-remoteroid.html">What is Remoteroid?</a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Components<b class="caret"></b></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="aLabel">
                   <li class="nav-header">Client</li>
-                  <li><a tabindex="-1" href="../../../remoteroid-client.html">Remoteroid for Android</a></li>
+                  <li><a tabindex="-1" href="remoteroid-client.html">Remoteroid for Android</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Server</li>
-                  <li><a tabindex="-1" href="../../../remoteroid-server-windows.html">Remoteroid for Windows</a></li>
-                  <li><a tabindex="-1" href="../../../remoteroid-server-universal.html">Remoteroid Universal</a></li>
+                  <li><a tabindex="-1" href="remoteroid-server-windows.html">Remoteroid for Windows</a></li>
+                  <li><a tabindex="-1" href="remoteroid-server-universal.html">Remoteroid Universal</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Management service</li>
-                  <li><a tabindex="-1" href="../../../remoteroid-web.html">Remoteroid Web</a></li>
+                  <li><a tabindex="-1" href="remoteroid-web.html">Remoteroid Web</a></li>
                 </ul>
               </li>
-              <li class="active"><a href="../../../post_list.html">Blog</a></li>
+              <li><a href="post_list.html">Blog</a></li>
               <li><a href="license.html">License</a><li>
               <li><a href="contacts.html">Contacts</a></li>
             </ul>
@@ -103,14 +103,14 @@
 
 <div class="wrapper">
   <div class="container">
-    <p>이 곳에 포스팅의 내용이 들어갑니다.</p>
+    {{ content }}
   </div>
   <div class="push"></div>
 </div>
 
 <footer>
   <div class="container">
-    <center>Remoteroid is an open source software. Please refer to <a href="../../../license.html">License</a> for details.</center>
+    <center>Remoteroid is an open source software. Please refer to <a href="license.html">License</a> for details.</center>
   </div>
 </footer>
 </body>
