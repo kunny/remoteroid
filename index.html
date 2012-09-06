@@ -19,7 +19,7 @@ layout: index
 
 	{% if post.publish != false %}
 	<div class="well">
-		<p class="lead"><a href="{{ post.url }}">{{ post.title }}</a></p>
+		<p class="lead"><a href="remoteroid{{ post.url }}">{{ post.title }}</a></p>
 		<div>{{ post.description }}</div>
 		<div>
 			<p align="right">{{ post.date | date : "%Y/%m/%d" }}</p>
