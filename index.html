@@ -20,7 +20,7 @@ layout: index
 	{% if post.publish != false %}
 	<div class="well">
 		<p class="lead"><a href="{{ post.url }}">{{ post.title }}</a></p>
-		<div>{{ post.content | truncate:200 }}</div>
+		<div>{{ post.description }}</div>
 		<div>
 			<p align="right">{{ post.date | date : "%Y/%m/%d" }}</p>
 		</div>
