@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../../css/bootstrap-responsive.min.css" rel="stylesheet">
-  <script src="../../../js/jquery-1.8.1.min.js"></script>
-  <title>{{ page.title }} :: Remoteroid Blog</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="js/jquery-1.8.1.min.js"></script>
+  <title>Remoteroid</title>
 <style>
         html, body {
             height: 100%;
@@ -58,7 +58,7 @@
 </head>
 
 <body>
-<script src="../../../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
       <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -67,29 +67,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/index.html">Remoteroid</a>
+          <a class="brand" href="index.html">Remoteroid</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="/index.html">Blog</a></li>
-              <li><a href="/remoteroid/what-is-remoteroid.html">What is Remoteroid?</a></li>
+              <li><a href="index.html">Blog</a></li>
+              <li><a href="what-is-remoteroid.html">What is Remoteroid?</a></li>
               <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Components<b class="caret"></b></a>
+                <a class="dropdown-toggle active" data-toggle="dropdown" href="#" class="active">Components<b class="caret"></b></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="aLabel">
                   <li class="nav-header">Client</li>
-                  <li><a tabindex="-1" href="/remoteroid/remoteroid-client.html">Remoteroid for Android</a></li>
+                  <li><a tabindex="-1" href="remoteroid-client.html">Remoteroid for Android</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Server</li>
-                  <li><a tabindex="-1" href="/remoteroid/remoteroid-server-windows.html">Remoteroid for Windows</a></li>
-                  <li><a tabindex="-1" href="/remoteroid/remoteroid-server-universal.html">Remoteroid Universal</a></li>
+                  <li><a tabindex="-1" href="remoteroid-server-windows.html">Remoteroid for Windows</a></li>
+                  <li><a tabindex="-1" href="remoteroid-server-universal.html">Remoteroid Universal</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Management service</li>
-                  <li><a tabindex="-1" href="/remoteroid/remoteroid-web.html">Remoteroid Web</a></li>
+                  <li><a tabindex="-1" href="remoteroid-web.html">Remoteroid Web</a></li>
                 </ul>
               </li>
-              <li><a href="/remoteroid/documentation.html">Documentation</a></li>
-              <li><a href="/remoteroid/download.html">Download</a></li>
-              <li><a href="/remoteroid/license.html">License</a><li>
-              <li><a href="/remoteroid/contacts.html">Contacts</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="download.html">Download</a></li>
+              <li><a href="license.html">License</a><li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -104,24 +104,15 @@
     </div>
 
 <div class="wrapper">
-  
   <div class="container">
-    <div class="well well-small">
-      <h1>{{ page.title }}</h1>
-        <p>Posted by <a href="mailto:{{page.author-email}}">{{ page.author }}</a></p>
-        <p>{{ page.date | date: %Y-%m-%d }}</p>
-        </div>
-        <div>
     {{ content }}
-  </div>
-    <a class="btn pull-right" href="/index.html">List</a>
   </div>
   <div class="push"></div>
 </div>
 
 <footer>
   <div class="container">
-    <center>Remoteroid is an open source software. Please refer to <a href="../../../license.html">License</a> for details.</center>
+    <center>Remoteroid is an open source software. Please refer to <a href="license.html">License</a> for details.</center>
   </div>
 </footer>
 </body>
