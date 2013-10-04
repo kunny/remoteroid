@@ -20,10 +20,10 @@ layout: download
 				<td><span class="label">Android</span></td>
 				<td><span class="label label-success">Stable</span></td>
 				<td>
-					<a class="btn btn-info btn-small" href="https://remoteroid.googlecode.com/files/Remoteroid_130930.apk">
+					<a class="btn btn-info btn-small" href="https://remoteroid.googlecode.com/files/Remoteroid_20121117.apk">
 					<i class="icon-download-alt"></i> APK
 					</a>
-					<a class="btn btn-info btn-small disabled" href="https://remoteroid.googlecode.com/files/Remoteroid_130930.apk">
+					<a class="btn btn-info btn-small disabled" href="https://remoteroid.googlecode.com/files/Remoteroid_20121117.apk">
 						<i class="icon-shopping-cart"></i> Play store
 					</a>
 				</td>
