@@ -49,10 +49,18 @@ public class MainActivity extends ActionBarActivity {
                 .commit();
     }
 
+    private void initFragments(){
+        if(fragNotification==null){
+            fragNotification = new NotificationFragment();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initFragments();
 
         if(savedInstanceState!=null){
             // Restore fragment state on here
@@ -93,12 +101,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(KEY_FRAGMENT_ID, lastFragmentId);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
     }
 
     @Override

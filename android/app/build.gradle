@@ -2,10 +2,10 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
-        packageName "com.androidhuman.remoteroid"
+        applicationId "com.androidhuman.remoteroid"
         minSdkVersion 9
         targetSdkVersion 19
         versionCode 1
@@ -27,5 +27,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.android.support:support-v4:19.+'
     compile 'com.google.android.gms:play-services:+'
-    compile 'com.android.support:support-v4:19.+'
+    compile 'com.androidhuman:android-support-v4-preferencefragment:+'
+    compile 'com.androidhuman:accountviews:+'
 }

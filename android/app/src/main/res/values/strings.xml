@@ -5,4 +5,8 @@
     <string name="rd_notification_listener">Notification listener</string>
     <string name="rd_notification_listener_compat_description">Enable this service to sync your notifications.</string>
 
+    <string name="key_notification_enable">pref_notification_enabled</string>
+    <string name="key_notification_filter_incoming_call">pref_notification_filter_incoming_call</string>
+    <string name="key_notification_filter_application">pref_notification_filter_application</string>
+    <string name="key_notification_filter_type">pref_notification_filter_type</string>
 </resources>

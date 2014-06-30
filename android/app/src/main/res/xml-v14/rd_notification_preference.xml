@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Notification">
+
+    <SwitchPreference android:key="@string/key_notification_enable"
+        android:title="Sync notifications"
+        android:summaryOn="Notification is synced through your devices"
+        android:summaryOff="Notification sync turned off"
+        android:disableDependentsState="false"/>
+
+    <PreferenceCategory android:title="Filter">
+
+        <SwitchPreference android:key="@string/key_notification_filter_incoming_call"
+            android:title="Incoming call"
+            android:summary="Notify for incoming calls"
+            android:dependency="@string/key_notification_enable"/>
+
+        <SwitchPreference android:key="@string/key_notification_filter_application"
+            android:title="Applications"
+            android:dependency="@string/key_notification_enable"/>
+
+        <!-- TODO add PreferenceScreen to for application selection -->
+
+        <SwitchPreference android:key="@string/key_notification_filter_type"
+            android:title="Notification type"
+            android:dependency="@string/key_notification_enable"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
